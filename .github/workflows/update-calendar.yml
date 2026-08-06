@@ -10,22 +10,21 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Le site est publié en poussant le dossier compilé sur la branche `gh-pages`,
+# que GitHub Pages sert directement. On n'utilise pas `actions/deploy-pages` :
+# ce mécanisme exige que la source Pages soit « GitHub Actions », ce qui interdit
+# toute publication manuelle. Avec une branche, le site peut être republié depuis
+# n'importe quelle machine (`npm run ci` puis push) si Actions est indisponible.
 permissions:
-  contents: write # pour committer le calendrier régénéré
-  pages: write
-  id-token: write
+  contents: write
 
-# Une seule publication à la fois ; on ne coupe pas une publication en cours.
 concurrency:
-  group: pages
+  group: publication
   cancel-in-progress: false
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - uses: actions/checkout@v4
@@ -61,11 +60,19 @@ jobs:
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      # `gh-pages` ne contient que le résultat de la compilation. Son historique
+      # n'a aucune valeur : on le réécrit à chaque passe pour que le dépôt ne
+      # grossisse pas d'un jeu de fichiers compilés par jour.
+      - name: Publier sur la branche gh-pages
+        working-directory: dist
+        run: |
+          git init -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publier le site — ${GITHUB_SHA::7}"
+          git push --force \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

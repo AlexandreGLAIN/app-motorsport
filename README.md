@@ -157,8 +157,21 @@ parce qu'il fournit aussi la tâche quotidienne.
 ### GitHub Pages (recommandé)
 
 Le workflow `.github/workflows/update-calendar.yml` est déjà écrit. Il récupère
-les horaires, committe le calendrier s'il a changé, construit le site et le
-publie — tous les jours à 04:00 UTC, et à chaque `push`.
+les horaires, committe le calendrier s'il a changé, construit le site et pousse
+le résultat sur la branche `gh-pages` — tous les jours à 04:00 UTC, et à chaque
+`push` sur `main`.
+
+Le site est servi depuis la branche `gh-pages`, et non via `actions/deploy-pages`.
+Cette dépendance en moins a un intérêt concret : **le site peut être republié à la
+main depuis n'importe quelle machine**, sans attendre que GitHub Actions soit
+disponible.
+
+```bash
+npm run ci
+```
+
+Puis pousser le contenu de `dist/` sur `gh-pages` (voir « Publier à la main » plus
+bas).
 
 > Sous **Windows PowerShell**, `&&` n'est pas un séparateur d'instruction : les
 > commandes ci-dessous sont à lancer une par une.
@@ -196,8 +209,38 @@ git remote add origin https://github.com/VOTRE-COMPTE/app-motorsport.git
 git push -u origin main
 ```
 
-Puis dans le dépôt : **Settings → Pages → Source : GitHub Actions**. Le site sera
-publié sur `https://VOTRE-COMPTE.github.io/app-motorsport/`.
+Puis dans le dépôt : **Settings → Pages → Source : Deploy from a branch →
+`gh-pages` / `/ (root)`**. Le site sera publié sur
+`https://VOTRE-COMPTE.github.io/app-motorsport/`.
+
+### Publier à la main
+
+Utile pour une mise en ligne immédiate, ou quand GitHub Actions est indisponible.
+
+```bash
+npm run ci
+```
+
+```bash
+git worktree add --orphan -b gh-pages ../publication
+```
+
+Copiez le contenu de `dist/` (y compris `.nojekyll`) dans `../publication`, puis :
+
+```bash
+git -C ../publication add -A
+```
+
+```bash
+git -C ../publication commit -m "Publier le site"
+```
+
+```bash
+git -C ../publication push --force origin gh-pages
+```
+
+La branche `gh-pages` ne contient que le résultat de la compilation : son
+historique est réécrit à chaque publication, c'est normal.
 
 > Le workflow passe `BASE_PATH=/<nom-du-dépôt>/` au build, ce dont Vite a besoin
 > pour un site servi dans un sous-chemin. Sur un domaine dédié, laissez `BASE_PATH`
