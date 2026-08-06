@@ -1,0 +1,30 @@
+{
+  "name": "app-motorsport",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Calendrier hebdomadaire du sport auto : toutes les catégories, tous les horaires (Paris), toutes les plateformes de diffusion, au même endroit.",
+  "scripts": {
+    "dev": "vite",
+    "ingest": "tsx scripts/ingest/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "ci": "npm run ingest && npm run build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

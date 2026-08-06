@@ -1,0 +1,71 @@
+name: Actualiser et publier le calendrier
+
+# Une passe par jour à 04:00 UTC (06:00 à Paris l'été, 05:00 l'hiver) : les
+# horaires officiels bougent surtout en semaine, une actualisation quotidienne
+# suffit largement et reste très légère pour les sources.
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write # pour committer le calendrier régénéré
+  pages: write
+  id-token: write
+
+# Une seule publication à la fois ; on ne coupe pas une publication en cours.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Le calendrier versionné sert de filet : si une source est indisponible,
+      # le pipeline reprend ses sessions au lieu de les faire disparaître.
+      - name: Récupérer les horaires
+        run: npm run ingest
+
+      - name: Committer le calendrier s'il a changé
+        run: |
+          if git diff --quiet -- public/data/calendar.json; then
+            echo "Aucun changement dans le calendrier."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/data/calendar.json
+            git commit -m "chore(data): actualisation quotidienne du calendrier"
+            git push
+          fi
+
+      # GitHub Pages sert le site sous /<nom-du-depot>/ : sans ce préfixe, les
+      # ressources seraient cherchées à la racine du domaine et renverraient 404.
+      - name: Construire le site
+        run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
