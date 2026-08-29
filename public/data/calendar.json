@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T15:45:16.390Z",
+  "generatedAt": "2026-08-29T10:32:52.159Z",
   "seasons": [
     2026,
     2027
@@ -2796,19 +2796,6 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:fe"
-    },
-    {
-      "id": "motogp-2026-r6-course",
-      "seriesId": "motogp",
-      "round": 6,
-      "eventName": "Espagne",
-      "location": "Spain",
-      "label": "Course",
-      "kind": "race",
-      "startUtc": "2026-05-17T12:00:00.000Z",
-      "durationMin": 50,
-      "timeTbd": false,
-      "source": "sportstimes:motogp"
     },
     {
       "id": "fe-2026-r10-course",
@@ -5708,7 +5695,7 @@
       "location": "United Kingdom",
       "label": "Course sprint",
       "kind": "sprint",
-      "startUtc": "2026-08-08T15:00:00.000Z",
+      "startUtc": "2026-08-08T15:05:00.000Z",
       "durationMin": 45,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -5805,19 +5792,6 @@
       "source": "sportstimes:fe"
     },
     {
-      "id": "indycar-2026-r14-essais-libres-1",
-      "seriesId": "indycar",
-      "round": 14,
-      "eventName": "Ontario Honda Dealers Indy at Markham",
-      "location": "Ontario Honda Dealers Indy at Markham",
-      "label": "Essais libres 1",
-      "kind": "practice",
-      "startUtc": "2026-08-14T19:00:00.000Z",
-      "durationMin": 60,
-      "timeTbd": false,
-      "source": "sportstimes:indycar"
-    },
-    {
       "id": "fe-2026-r16-essais-libres-2",
       "seriesId": "fe",
       "round": 16,
@@ -5844,12 +5818,12 @@
       "source": "sportstimes:fe"
     },
     {
-      "id": "indycar-2026-r14-essais-libres-2",
+      "id": "indycar-2026-r14-essais-libres-1",
       "seriesId": "indycar",
       "round": 14,
       "eventName": "Ontario Honda Dealers Indy at Markham",
       "location": "Ontario Honda Dealers Indy at Markham",
-      "label": "Essais libres 2",
+      "label": "Essais libres 1",
       "kind": "practice",
       "startUtc": "2026-08-15T14:00:00.000Z",
       "durationMin": 60,
@@ -5870,6 +5844,19 @@
       "source": "sportstimes:fe"
     },
     {
+      "id": "indycar-2026-r14-essais-libres-2",
+      "seriesId": "indycar",
+      "round": 14,
+      "eventName": "Ontario Honda Dealers Indy at Markham",
+      "location": "Ontario Honda Dealers Indy at Markham",
+      "label": "Essais libres 2",
+      "kind": "practice",
+      "startUtc": "2026-08-15T18:30:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:indycar"
+    },
+    {
       "id": "indycar-2026-r14-qualifications",
       "seriesId": "indycar",
       "round": 14,
@@ -5877,7 +5864,7 @@
       "location": "Ontario Honda Dealers Indy at Markham",
       "label": "Qualifications",
       "kind": "qualifying",
-      "startUtc": "2026-08-15T18:25:00.000Z",
+      "startUtc": "2026-08-15T23:00:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:indycar"
@@ -6029,8 +6016,8 @@
       "id": "indycar-2026-r15-essais-libres-1",
       "seriesId": "indycar",
       "round": 15,
-      "eventName": "Freedom 250 Grand Prix of Washington, D.C.",
-      "location": "Freedom 250 Grand Prix of Washington, D.C.",
+      "eventName": "Freedom 250 Grand Prix of Washington DC",
+      "location": "Freedom 250 Grand Prix of Washington DC",
       "label": "Essais libres 1",
       "kind": "practice",
       "startUtc": "2026-08-22T13:00:00.000Z",
@@ -6055,8 +6042,8 @@
       "id": "indycar-2026-r15-essais-libres-2",
       "seriesId": "indycar",
       "round": 15,
-      "eventName": "Freedom 250 Grand Prix of Washington, D.C.",
-      "location": "Freedom 250 Grand Prix of Washington, D.C.",
+      "eventName": "Freedom 250 Grand Prix of Washington DC",
+      "location": "Freedom 250 Grand Prix of Washington DC",
       "label": "Essais libres 2",
       "kind": "practice",
       "startUtc": "2026-08-22T17:00:00.000Z",
@@ -6068,8 +6055,8 @@
       "id": "indycar-2026-r15-qualifications",
       "seriesId": "indycar",
       "round": 15,
-      "eventName": "Freedom 250 Grand Prix of Washington, D.C.",
-      "location": "Freedom 250 Grand Prix of Washington, D.C.",
+      "eventName": "Freedom 250 Grand Prix of Washington DC",
+      "location": "Freedom 250 Grand Prix of Washington DC",
       "label": "Qualifications",
       "kind": "qualifying",
       "startUtc": "2026-08-22T21:00:00.000Z",
@@ -6085,7 +6072,7 @@
       "location": "Netherlands",
       "label": "Course 2",
       "kind": "race",
-      "startUtc": "2026-08-23T08:40:00.000Z",
+      "startUtc": "2026-08-23T08:30:00.000Z",
       "durationMin": 40,
       "timeTbd": false,
       "source": "sportstimes:f1-academy"
@@ -6121,8 +6108,8 @@
       "id": "indycar-2026-r15-warm-up",
       "seriesId": "indycar",
       "round": 15,
-      "eventName": "Freedom 250 Grand Prix of Washington, D.C.",
-      "location": "Freedom 250 Grand Prix of Washington, D.C.",
+      "eventName": "Freedom 250 Grand Prix of Washington DC",
+      "location": "Freedom 250 Grand Prix of Washington DC",
       "label": "Warm-up",
       "kind": "practice",
       "startUtc": "2026-08-23T13:00:00.000Z",
@@ -6134,8 +6121,8 @@
       "id": "indycar-2026-r15-course",
       "seriesId": "indycar",
       "round": 15,
-      "eventName": "Freedom 250 Grand Prix of Washington, D.C.",
-      "location": "Freedom 250 Grand Prix of Washington, D.C.",
+      "eventName": "Freedom 250 Grand Prix of Washington DC",
+      "location": "Freedom 250 Grand Prix of Washington DC",
       "label": "Course",
       "kind": "race",
       "startUtc": "2026-08-23T17:00:00.000Z",
@@ -6382,6 +6369,19 @@
       "timeTbd": true,
       "tbdDate": "2026-08-30",
       "source": "ics:wrc"
+    },
+    {
+      "id": "indycar-2026-r17-warm-up",
+      "seriesId": "indycar",
+      "round": 17,
+      "eventName": "Snap-on Milwaukee Mile 250",
+      "location": "Snap-on Milwaukee Mile 250",
+      "label": "Warm-up",
+      "kind": "practice",
+      "startUtc": "2026-08-30T14:15:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:indycar"
     },
     {
       "id": "indycar-2026-r17-course",
@@ -7668,7 +7668,7 @@
       "location": "Indonesia",
       "label": "Course",
       "kind": "race",
-      "startUtc": "2026-10-11T06:00:00.000Z",
+      "startUtc": "2026-10-11T07:00:00.000Z",
       "durationMin": 50,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -7685,6 +7685,32 @@
       "durationMin": 120,
       "timeTbd": false,
       "source": "sportstimes:f1"
+    },
+    {
+      "id": "f1-academy-2026-r5-essais-libres-1",
+      "seriesId": "f1-academy",
+      "round": 5,
+      "eventName": "Austin",
+      "location": "Austin",
+      "label": "Essais libres 1",
+      "kind": "practice",
+      "startUtc": "2026-10-22T06:00:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:f1-academy"
+    },
+    {
+      "id": "f1-academy-2026-r5-qualifications-1",
+      "seriesId": "f1-academy",
+      "round": 5,
+      "eventName": "Austin",
+      "location": "Austin",
+      "label": "Qualifications 1",
+      "kind": "qualifying",
+      "startUtc": "2026-10-22T07:00:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:f1-academy"
     },
     {
       "id": "motogp-2026-r18-essais-libres-1",
@@ -7711,32 +7737,6 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
-    },
-    {
-      "id": "f1-academy-2026-r5-essais-libres-1",
-      "seriesId": "f1-academy",
-      "round": 5,
-      "eventName": "Austin",
-      "location": "Austin",
-      "label": "Essais libres 1",
-      "kind": "practice",
-      "startUtc": "2026-10-23T06:00:00.000Z",
-      "durationMin": 60,
-      "timeTbd": false,
-      "source": "sportstimes:f1-academy"
-    },
-    {
-      "id": "f1-academy-2026-r5-qualifications-1",
-      "seriesId": "f1-academy",
-      "round": 5,
-      "eventName": "Austin",
-      "location": "Austin",
-      "label": "Qualifications 1",
-      "kind": "qualifying",
-      "startUtc": "2026-10-23T07:00:00.000Z",
-      "durationMin": 60,
-      "timeTbd": false,
-      "source": "sportstimes:f1-academy"
     },
     {
       "id": "f1-2026-r18-essais-libres-1",
@@ -8951,7 +8951,7 @@
       "label": "MotoGP",
       "url": "https://raw.githubusercontent.com/sportstimes/f1/main/_db/motogp/2026.json",
       "ok": true,
-      "sessionCount": 176
+      "sessionCount": 175
     },
     {
       "id": "fe",
@@ -8965,7 +8965,7 @@
       "label": "IndyCar",
       "url": "https://raw.githubusercontent.com/sportstimes/f1/main/_db/indycar/2026.json",
       "ok": true,
-      "sessionCount": 88
+      "sessionCount": 89
     },
     {
       "id": "wec",
