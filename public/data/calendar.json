@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T08:22:51.664Z",
+  "generatedAt": "2026-09-12T08:11:28.979Z",
   "seasons": [
     2026,
     2027
@@ -2796,6 +2796,19 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:fe"
+    },
+    {
+      "id": "motogp-2026-r6-course",
+      "seriesId": "motogp",
+      "round": 6,
+      "eventName": "Espagne",
+      "location": "Spain",
+      "label": "Course",
+      "kind": "race",
+      "startUtc": "2026-05-17T12:00:00.000Z",
+      "durationMin": 50,
+      "timeTbd": false,
+      "source": "sportstimes:motogp"
     },
     {
       "id": "fe-2026-r10-course",
@@ -6712,19 +6725,6 @@
       "source": "sportstimes:f2"
     },
     {
-      "id": "f3-2026-r9-qualifications",
-      "seriesId": "f3",
-      "round": 9,
-      "eventName": "Madrid",
-      "location": "Madrid",
-      "label": "Qualifications",
-      "kind": "qualifying",
-      "startUtc": "2026-09-11T10:20:00.000Z",
-      "durationMin": 60,
-      "timeTbd": false,
-      "source": "sportstimes:f3"
-    },
-    {
       "id": "f1-2026-r14-essais-libres-1",
       "seriesId": "f1",
       "round": 14,
@@ -6789,6 +6789,19 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f1"
+    },
+    {
+      "id": "f3-2026-r9-qualifications",
+      "seriesId": "f3",
+      "round": 9,
+      "eventName": "Madrid",
+      "location": "Madrid",
+      "label": "Qualifications",
+      "kind": "qualifying",
+      "startUtc": "2026-09-11T16:25:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:f3"
     },
     {
       "id": "f3-2026-r9-course-sprint",
@@ -6909,19 +6922,6 @@
       "source": "sportstimes:f1"
     },
     {
-      "id": "f3-2026-r9-course-principale",
-      "seriesId": "f3",
-      "round": 9,
-      "eventName": "Madrid",
-      "location": "Madrid",
-      "label": "Course principale",
-      "kind": "race",
-      "startUtc": "2026-09-13T07:20:00.000Z",
-      "durationMin": 45,
-      "timeTbd": false,
-      "source": "sportstimes:f3"
-    },
-    {
       "id": "motogp-2026-r14-warm-up",
       "seriesId": "motogp",
       "round": 14,
@@ -6933,6 +6933,19 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
+    },
+    {
+      "id": "f3-2026-r9-course-principale",
+      "seriesId": "f3",
+      "round": 9,
+      "eventName": "Madrid",
+      "location": "Madrid",
+      "label": "Course principale",
+      "kind": "race",
+      "startUtc": "2026-09-13T07:45:00.000Z",
+      "durationMin": 45,
+      "timeTbd": false,
+      "source": "sportstimes:f3"
     },
     {
       "id": "f2-2026-r11-course-principale",
@@ -8951,7 +8964,7 @@
       "label": "MotoGP",
       "url": "https://raw.githubusercontent.com/sportstimes/f1/main/_db/motogp/2026.json",
       "ok": true,
-      "sessionCount": 175
+      "sessionCount": 176
     },
     {
       "id": "fe",
