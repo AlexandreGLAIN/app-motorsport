@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T08:11:28.979Z",
+  "generatedAt": "2026-09-13T08:36:08.965Z",
   "seasons": [
     2026,
     2027
@@ -6417,7 +6417,7 @@
       "location": "Monza",
       "label": "Essais libres",
       "kind": "practice",
-      "startUtc": "2026-09-04T06:45:00.000Z",
+      "startUtc": "2026-09-04T06:35:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f3"
@@ -6430,7 +6430,7 @@
       "location": "Monza",
       "label": "Essais libres",
       "kind": "practice",
-      "startUtc": "2026-09-04T09:55:00.000Z",
+      "startUtc": "2026-09-04T08:00:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f2"
@@ -6456,7 +6456,7 @@
       "location": "Monza",
       "label": "Qualifications",
       "kind": "qualifying",
-      "startUtc": "2026-09-04T13:00:00.000Z",
+      "startUtc": "2026-09-04T12:00:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f3"
@@ -6469,7 +6469,7 @@
       "location": "Monza",
       "label": "Qualifications",
       "kind": "qualifying",
-      "startUtc": "2026-09-04T13:55:00.000Z",
+      "startUtc": "2026-09-04T12:55:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f2"
@@ -6501,17 +6501,17 @@
       "source": "sportstimes:indycar"
     },
     {
-      "id": "f2-2026-r10-course-sprint",
-      "seriesId": "f2",
-      "round": 10,
+      "id": "f3-2026-r8-course-sprint",
+      "seriesId": "f3",
+      "round": 8,
       "eventName": "Monza",
       "location": "Monza",
       "label": "Course sprint",
       "kind": "sprint",
-      "startUtc": "2026-09-05T08:35:00.000Z",
+      "startUtc": "2026-09-05T07:30:00.000Z",
       "durationMin": 45,
       "timeTbd": false,
-      "source": "sportstimes:f2"
+      "source": "sportstimes:f3"
     },
     {
       "id": "f1-2026-r13-essais-libres-3",
@@ -6527,6 +6527,19 @@
       "source": "sportstimes:f1"
     },
     {
+      "id": "f2-2026-r10-course-sprint",
+      "seriesId": "f2",
+      "round": 10,
+      "eventName": "Monza",
+      "location": "Monza",
+      "label": "Course sprint",
+      "kind": "sprint",
+      "startUtc": "2026-09-05T12:15:00.000Z",
+      "durationMin": 45,
+      "timeTbd": false,
+      "source": "sportstimes:f2"
+    },
+    {
       "id": "f1-2026-r13-qualifications",
       "seriesId": "f1",
       "round": 13,
@@ -6538,19 +6551,6 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f1"
-    },
-    {
-      "id": "f3-2026-r8-course-sprint",
-      "seriesId": "f3",
-      "round": 8,
-      "eventName": "Monza",
-      "location": "Monza",
-      "label": "Course sprint",
-      "kind": "sprint",
-      "startUtc": "2026-09-05T14:45:00.000Z",
-      "durationMin": 45,
-      "timeTbd": false,
-      "source": "sportstimes:f3"
     },
     {
       "id": "indycar-2026-r18-essais-libres-2",
@@ -6599,7 +6599,7 @@
       "location": "Monza",
       "label": "Course principale",
       "kind": "race",
-      "startUtc": "2026-09-06T07:20:00.000Z",
+      "startUtc": "2026-09-06T06:15:00.000Z",
       "durationMin": 45,
       "timeTbd": false,
       "source": "sportstimes:f3"
@@ -6612,7 +6612,7 @@
       "location": "Monza",
       "label": "Course principale",
       "kind": "race",
-      "startUtc": "2026-09-06T08:40:00.000Z",
+      "startUtc": "2026-09-06T07:45:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f2"
@@ -6693,7 +6693,7 @@
       "location": "Madrid",
       "label": "Essais libres",
       "kind": "practice",
-      "startUtc": "2026-09-11T06:45:00.000Z",
+      "startUtc": "2026-09-11T07:55:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f3"
@@ -6719,7 +6719,7 @@
       "location": "Madrid",
       "label": "Essais libres",
       "kind": "practice",
-      "startUtc": "2026-09-11T09:55:00.000Z",
+      "startUtc": "2026-09-11T09:05:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f2"
@@ -6752,6 +6752,19 @@
       "source": "ics:wrc"
     },
     {
+      "id": "f2-2026-r11-qualifications",
+      "seriesId": "f2",
+      "round": 11,
+      "eventName": "Madrid",
+      "location": "Madrid",
+      "label": "Qualifications",
+      "kind": "qualifying",
+      "startUtc": "2026-09-11T13:00:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:f2"
+    },
+    {
       "id": "motogp-2026-r14-essais-libres",
       "seriesId": "motogp",
       "round": 14,
@@ -6763,19 +6776,6 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
-    },
-    {
-      "id": "f2-2026-r11-qualifications",
-      "seriesId": "f2",
-      "round": 11,
-      "eventName": "Madrid",
-      "location": "Madrid",
-      "label": "Qualifications",
-      "kind": "qualifying",
-      "startUtc": "2026-09-11T13:55:00.000Z",
-      "durationMin": 60,
-      "timeTbd": false,
-      "source": "sportstimes:f2"
     },
     {
       "id": "f1-2026-r14-essais-libres-2",
@@ -6804,19 +6804,6 @@
       "source": "sportstimes:f3"
     },
     {
-      "id": "f3-2026-r9-course-sprint",
-      "seriesId": "f3",
-      "round": 9,
-      "eventName": "Madrid",
-      "location": "Madrid",
-      "label": "Course sprint",
-      "kind": "sprint",
-      "startUtc": "2026-09-12T07:45:00.000Z",
-      "durationMin": 45,
-      "timeTbd": false,
-      "source": "sportstimes:f3"
-    },
-    {
       "id": "motogp-2026-r14-essais-libres-2",
       "seriesId": "motogp",
       "round": 14,
@@ -6830,19 +6817,6 @@
       "source": "sportstimes:motogp"
     },
     {
-      "id": "f2-2026-r11-course-sprint",
-      "seriesId": "f2",
-      "round": 11,
-      "eventName": "Madrid",
-      "location": "Madrid",
-      "label": "Course sprint",
-      "kind": "sprint",
-      "startUtc": "2026-09-12T08:35:00.000Z",
-      "durationMin": 45,
-      "timeTbd": false,
-      "source": "sportstimes:f2"
-    },
-    {
       "id": "motogp-2026-r14-qualifications-1",
       "seriesId": "motogp",
       "round": 14,
@@ -6854,6 +6828,19 @@
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
+    },
+    {
+      "id": "f3-2026-r9-course-sprint",
+      "seriesId": "f3",
+      "round": 9,
+      "eventName": "Madrid",
+      "location": "Madrid",
+      "label": "Course sprint",
+      "kind": "sprint",
+      "startUtc": "2026-09-12T09:05:00.000Z",
+      "durationMin": 45,
+      "timeTbd": false,
+      "source": "sportstimes:f3"
     },
     {
       "id": "motogp-2026-r14-qualifications-2",
@@ -6894,6 +6881,19 @@
       "timeTbd": true,
       "tbdDate": "2026-09-12",
       "source": "ics:wrc"
+    },
+    {
+      "id": "f2-2026-r11-course-sprint",
+      "seriesId": "f2",
+      "round": 11,
+      "eventName": "Madrid",
+      "location": "Madrid",
+      "label": "Course sprint",
+      "kind": "sprint",
+      "startUtc": "2026-09-12T12:15:00.000Z",
+      "durationMin": 45,
+      "timeTbd": false,
+      "source": "sportstimes:f2"
     },
     {
       "id": "motogp-2026-r14-course-sprint",
@@ -6955,7 +6955,7 @@
       "location": "Madrid",
       "label": "Course principale",
       "kind": "race",
-      "startUtc": "2026-09-13T08:40:00.000Z",
+      "startUtc": "2026-09-13T09:25:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:f2"
