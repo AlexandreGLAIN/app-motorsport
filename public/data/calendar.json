@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T11:41:59.141Z",
+  "generatedAt": "2026-11-06T11:40:18.999Z",
   "seasons": [
     2026,
     2027
@@ -7929,7 +7929,7 @@
       "location": "Australia",
       "label": "Course",
       "kind": "race",
-      "startUtc": "2026-10-25T03:00:00.000Z",
+      "startUtc": "2026-10-25T05:30:00.000Z",
       "durationMin": 50,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -8137,7 +8137,7 @@
       "location": "Qatar",
       "label": "Essais libres 1",
       "kind": "practice",
-      "startUtc": "2026-11-06T12:45:00.000Z",
+      "startUtc": "2026-11-06T11:45:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -8163,7 +8163,7 @@
       "location": "Qatar",
       "label": "Essais libres",
       "kind": "practice",
-      "startUtc": "2026-11-06T17:00:00.000Z",
+      "startUtc": "2026-11-06T16:00:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -8189,7 +8189,20 @@
       "location": "Qatar",
       "label": "Essais libres 2",
       "kind": "practice",
-      "startUtc": "2026-11-07T12:00:00.000Z",
+      "startUtc": "2026-11-07T11:00:00.000Z",
+      "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:motogp"
+    },
+    {
+      "id": "motogp-2026-r20-qualifications-1",
+      "seriesId": "motogp",
+      "round": 20,
+      "eventName": "Qatar",
+      "location": "Qatar",
+      "label": "Qualifications 1",
+      "kind": "qualifying",
+      "startUtc": "2026-11-07T11:40:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -8209,19 +8222,6 @@
       "source": "ics:wec"
     },
     {
-      "id": "motogp-2026-r20-qualifications-1",
-      "seriesId": "motogp",
-      "round": 20,
-      "eventName": "Qatar",
-      "location": "Qatar",
-      "label": "Qualifications 1",
-      "kind": "qualifying",
-      "startUtc": "2026-11-07T12:40:00.000Z",
-      "durationMin": 60,
-      "timeTbd": false,
-      "source": "sportstimes:motogp"
-    },
-    {
       "id": "motogp-2026-r20-qualifications-2",
       "seriesId": "motogp",
       "round": 20,
@@ -8229,7 +8229,7 @@
       "location": "Qatar",
       "label": "Qualifications 2",
       "kind": "qualifying",
-      "startUtc": "2026-11-07T13:05:00.000Z",
+      "startUtc": "2026-11-07T12:05:00.000Z",
       "durationMin": 60,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -8255,7 +8255,7 @@
       "location": "Qatar",
       "label": "Course sprint",
       "kind": "sprint",
-      "startUtc": "2026-11-07T17:00:00.000Z",
+      "startUtc": "2026-11-07T16:00:00.000Z",
       "durationMin": 45,
       "timeTbd": false,
       "source": "sportstimes:motogp"
@@ -8281,8 +8281,21 @@
       "location": "Qatar",
       "label": "Warm-up",
       "kind": "practice",
-      "startUtc": "2026-11-08T12:40:00.000Z",
+      "startUtc": "2026-11-08T11:40:00.000Z",
       "durationMin": 60,
+      "timeTbd": false,
+      "source": "sportstimes:motogp"
+    },
+    {
+      "id": "motogp-2026-r20-course",
+      "seriesId": "motogp",
+      "round": 20,
+      "eventName": "Qatar",
+      "location": "Qatar",
+      "label": "Course",
+      "kind": "race",
+      "startUtc": "2026-11-08T16:00:00.000Z",
+      "durationMin": 50,
       "timeTbd": false,
       "source": "sportstimes:motogp"
     },
@@ -8298,19 +8311,6 @@
       "durationMin": 120,
       "timeTbd": false,
       "source": "sportstimes:f1"
-    },
-    {
-      "id": "motogp-2026-r20-course",
-      "seriesId": "motogp",
-      "round": 20,
-      "eventName": "Qatar",
-      "location": "Qatar",
-      "label": "Course",
-      "kind": "race",
-      "startUtc": "2026-11-08T17:00:00.000Z",
-      "durationMin": 50,
-      "timeTbd": false,
-      "source": "sportstimes:motogp"
     },
     {
       "id": "wrc-2026-r14-journee-1",
